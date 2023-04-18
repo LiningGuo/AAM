@@ -1,10 +1,9 @@
-%�����ʵtfceֵ��FWEУ��pֵ��δУ��pֵ
 clc,clear
-addpath(genpath('/gpfs/lab/groupYU/members/guolining/DPABI_V6.0_210501/'));
-tfcecorrected_save_path = '/gpfs/lab/groupYU/members/guolining/meta_tfce_guo/result/gmv/d_tfce_corrected_stouffer'; %to save tfcemap corrected result
-[Datam, VoxelSizem, FileListm, Headerm] = y_ReadAll('/gpfs/lab/groupYU/members/guolining/meta_tfce_guo/r1mm_GM_Prob50_mask.nii');
+addpath(genpath('DPABI_V6.0_210501/'));
+tfcecorrected_save_path = ''; %to save tfcemap corrected result
+[Datam, VoxelSizem, FileListm, Headerm] = y_ReadAll('mask.nii');
 mask_index = find(Datam(:));
-tfce_perm_path = '/gpfs/lab/groupYU/members/guolining/meta_tfce_guo/result/gmv/c_tfce_stouffer';
+tfce_perm_path = '';
 files = dir(tfce_perm_path);
 max_tfce = [];
 all_tfce = [];
