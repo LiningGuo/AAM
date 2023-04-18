@@ -7,7 +7,7 @@ expo_sig <- fread('aam2017_250KB0.001R2.txt')
 expo_sig$samplesize.exposure <- 179117+73397
 
 outa_dat <- fread('gwas_roi1_result.txt')
-outa_dat$N <- 32690
+outa_dat$N <- 35818
 outa_dat <- format_data(
   outa_dat,
   type='outcome',
